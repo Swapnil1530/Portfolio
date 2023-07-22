@@ -4,6 +4,7 @@ import { FaCode } from "react-icons/fa";
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 
+
 const Skills = [
     {
         id: 1,
@@ -17,6 +18,62 @@ const Skills = [
         id: 3,
         title: "Javascript",
     },
+    {
+        id:4,
+        title:"Tailwind Css"
+    },
+    {
+        id:5,
+        title:"Bootstrap"
+    },
+    {
+        id:6,
+        title:"React JS"
+    },
+    {
+        id:7,
+        title:"Next Js"
+    },
+    {
+        id:8,
+        title: "C++"
+    },
+    {
+        id:9,
+        title: "Java"
+    },
+    {
+        id:10,
+        title: "Prisma ORM"
+    },
+    {
+        id:11,
+        title: "TypeScript"
+    },
+    {
+        id:12,
+        title: "Git"
+    },
+    {
+        id:13,
+        title: "Github"
+    },
+    {
+        id:14,
+        title:"Node js",
+    },
+    {
+        id:15,
+        title: "Express Js"
+    },
+    {
+        id:16,
+        title:"Mongo DB"
+    },
+    {
+        id:17,
+        title:"Postgresql"
+    }
 ];
 const Home = () => {
     return (
@@ -117,7 +174,7 @@ const Home = () => {
                             <div key={data.id}>
                                 <div className="flex items-center px-3 py-3 border rounded-lg border-light-gray dark:border-gray-800">
                                     <h3 className="ml-2 text-xs font-medium text-black dark:text-white md:text-sm md:ml-3">
-                                        {data.title}
+                                         {data.title}
                                     </h3>
                                 </div>
                             </div>
