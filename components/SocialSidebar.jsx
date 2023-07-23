@@ -12,6 +12,7 @@ const SocialSidebar = () => {
         </div>
     <div className="hidden md:flex justify-between fixed bottom-0 left-0 right-0 z-10 w-full px-3 md:px-10 2xl:px-20 max-w-[1905px] mx-auto">
         <aside className="flex flex-col items-center">
+        <div className="h-full w-[2px] bg-[#f72b1c] mb-5" />
             <ul className="flex flex-col items-center justify-center w-6 gap-5 space-y-1">
 
                 <Link className="text-gray-400 hover:text-[#f72b1c] w-7"
@@ -52,7 +53,9 @@ const SocialSidebar = () => {
             </ul>
             <div className="h-full w-[2px] bg-[#f72b1c] mt-5" />
         </aside>
+        
         <aside className="react-reveal flex flex-col justify-end items-center">
+        <div className=" h-52 w-[2px] bg-[#f72b1c] mb-5" />
             <Link
                 href="mailto:patelswapnil438@gmail.com"
                 className="text-gray-400 transition  duration-300 hover:text-[#f72b1c] tracking-widest  "

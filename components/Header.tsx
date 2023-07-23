@@ -39,9 +39,10 @@ const Header = () => {
     const activeSegment = useSelectedLayoutSegment();
     return (
         <>
-
+         
             <nav className="p-4 flex items-center justify-center bg-[#181818] fixed top-0 z-40 w-full max-w-[1905px] transform right-1/2 translate-x-1/2   transition duration-500  false">
-                <ul className="flex gap-16 ">
+        
+               <ul className="flex gap-16 ">
                     {linkData.map((link:any, index:any) => {
                         return (
                             <Link
