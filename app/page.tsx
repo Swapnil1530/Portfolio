@@ -1,12 +1,37 @@
 import React from "react";
 import Link from "next/link";
-import { FaCode , FaCss3Alt, FaReact,FaJava , FaGitAlt , FaNodeJs } from "react-icons/fa";
-import { BsFillLightningChargeFill , BsFillBootstrapFill, BsGithub } from "react-icons/bs";
-import {TbBrandJavascript , TbBrandCpp , TbBrandTypescript} from "react-icons/tb";
-import {BiLogoPostgresql} from "react-icons/bi";
+import Image from "next/image";
+import PortFolio from "../public/portfolio.png";
+import Feedback from "../public/feedback.png";
+import {
+  FaCode,
+  FaCss3Alt,
+  FaReact,
+  FaJava,
+  FaGitAlt,
+  FaNodeJs,
+} from "react-icons/fa";
+import {
+  BsFillLightningChargeFill,
+  BsFillBootstrapFill,
+  BsGithub,
+} from "react-icons/bs";
+import {
+  TbBrandJavascript,
+  TbBrandCpp,
+  TbBrandTypescript,
+} from "react-icons/tb";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { HiDownload } from "react-icons/hi";
 import { ImHtmlFive2 } from "react-icons/im";
-import {SiNextdotjs , SiTailwindcss, SiPrisma , SiExpress , SiMongodb} from "react-icons/si"
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiPrisma,
+  SiExpress,
+  SiMongodb,
+} from "react-icons/si";
+import {MdNavigateNext} from "react-icons/md";
 
 const Skills = [
   {
@@ -17,88 +42,89 @@ const Skills = [
   {
     id: 2,
     title: "CSS",
-    icon:<FaCss3Alt className="w-[28px] h-[28px] text-blue-500"/>
+    icon: <FaCss3Alt className="w-[28px] h-[28px] text-blue-500" />,
   },
   {
     id: 3,
     title: "Javascript",
-    icon:<TbBrandJavascript className="w-[28px] h-[28px] text-yellow-500"/>
+    icon: <TbBrandJavascript className="w-[28px] h-[28px] text-yellow-500" />,
   },
   {
     id: 4,
     title: "Tailwind Css",
-    icon:<SiTailwindcss className="w-[28px] h-[28px] text-[#6a83f7]" />
+    icon: <SiTailwindcss className="w-[28px] h-[28px] text-[#6a83f7]" />,
   },
   {
     id: 5,
     title: "Bootstrap",
-    icon:<BsFillBootstrapFill className="w-[28px] h-[28px] text-purple-700" />
+    icon: <BsFillBootstrapFill className="w-[28px] h-[28px] text-purple-700" />,
   },
   {
     id: 6,
     title: "React JS",
-    icon:<FaReact className="w-[28px] h-[28px] text-[#61DBFB]" />
+    icon: <FaReact className="w-[28px] h-[28px] text-[#61DBFB]" />,
   },
   {
     id: 7,
     title: "Next Js",
-    icon:<SiNextdotjs className="w-[28px] h-[28px]"/>
+    icon: <SiNextdotjs className="w-[28px] h-[28px]" />,
   },
   {
     id: 8,
     title: "C++",
-    icon:<TbBrandCpp className="w-[28px] h-[28px] text-blue-900"/>
+    icon: <TbBrandCpp className="w-[28px] h-[28px] text-blue-900" />,
   },
   {
     id: 9,
     title: "Java",
-    icon:<FaJava className="w-[28px] h-[28px] text-[#5382a1]"/>
+    icon: <FaJava className="w-[28px] h-[28px] text-[#5382a1]" />,
   },
   {
     id: 10,
     title: "Prisma ORM",
-    icon:<SiPrisma className="w-[28px] h-[28px]"/>
+    icon: <SiPrisma className="w-[28px] h-[28px]" />,
   },
   {
     id: 11,
     title: "TypeScript",
-    icon:<TbBrandTypescript className="w-[28px] h-[28px]"/>
+    icon: <TbBrandTypescript className="w-[28px] h-[28px] text-[#007acc]" />,
   },
   {
     id: 12,
     title: "Git",
-    icon:<FaGitAlt className="w-[28px] h-[28px]" />
+    icon: <FaGitAlt className="w-[28px] h-[28px] text-[#f34f29]" />,
   },
   {
     id: 13,
     title: "Github",
-    icon:<BsGithub className="w-[28px] h-[28px]"/>
+    icon: <BsGithub className="w-[28px] h-[28px]" />,
   },
   {
     id: 14,
     title: "Node js",
-    icon:<FaNodeJs className="w-[28px] h-[28px] text-green-700"/>
+    icon: <FaNodeJs className="w-[28px] h-[28px] text-green-700" />,
   },
   {
     id: 15,
     title: "Express Js",
-    icon:<SiExpress className="w-[28px] h-[28px]"/>
+    icon: <SiExpress className="w-[28px] h-[28px]" />,
   },
   {
     id: 16,
     title: "Mongo DB",
-    icon:<SiMongodb className="w-[28px] h-[28px] text-green-600"/>
+    icon: <SiMongodb className="w-[28px] h-[28px] text-green-600" />,
   },
   {
     id: 17,
     title: "Postgresql",
-    icon:<BiLogoPostgresql className="w-[28px] h-[28px] text-[#0064a5]"/>
+    icon: <BiLogoPostgresql className="w-[28px] h-[28px] text-[#0064a5]" />,
   },
 ];
+
 const Home = () => {
   return (
     <>
-      <header className=" bg-no-repeat bg-center px-3">
+      <section className=" bg-no-repeat bg-center px-3">
         <div className="react-reveal h-screen flex flex-col justify-center pt-16 items-center text-center lg:items-start lg:text-left">
           <span className="text-xs md:text-sm text-black flex items-center">
             <span className="dark:text-white">Hi, I'm</span>
@@ -124,7 +150,7 @@ const Home = () => {
             </span>
           </Link>
         </div>
-      </header>
+      </section>
       <section className="py-10 lg:py-16 px-3 border-b border-light-gray border-opacity-50 dark:border-gray-800">
         <h2 className="text-xl lg:text-2xl font-bold mb-0 text-center dark:text-white">
           What I can <span className="text-[#f72b1c]"> do</span>
@@ -197,15 +223,73 @@ const Home = () => {
                 <div className="flex items-center px-3 py-3 border rounded-lg border-light-gray dark:border-gray-800  hover:border-white hover:bg-[#f72b1c]">
                   <div className=" flex items-center justify-center md:w-8 md:h-8 text-black dark:text-white">
                     {data.icon}
-                    </div>
-                    <h3 className="ml-2 text-xs font-medium text-black dark:text-white md:text-sm md:ml-3 ">
-                      {data.title}
-                    </h3>
-                  
+                  </div>
+                  <h3 className="ml-2 text-xs font-medium text-black dark:text-white md:text-sm md:ml-3 ">
+                    {data.title}
+                  </h3>
                 </div>
               </div>
             );
           })}
+        </div>
+      </section>
+      <section className="py-10 lg:py-16 px-3 border-b border-light-gray border-opacity-50 dark:border-gray-800">
+        <h2 className="text-xl lg:text-2xl font-bold mb-0 text-center dark:text-white">
+          Projects I have <span className="text-[#f72b1c]">Completed</span>
+        </h2>
+        <div className="text-center mt-2 mb-3 lg:mb-5">
+          <span className="inline-block bg-[#f72b1c] w-[1.5px] lg:w-[2px] h-8 lg:h-9"></span>
+          <span className="inline-block bg-black dark:bg-white w-[1.5px] lg:w-[2px] h-8 lg:h-9 mx-1 lg:mx-[5px] -mb-2"></span>
+          <span className="inline-block bg-[#f72b1c] w-[1.5px] lg:w-[2px] h-8 lg:h-9"></span>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6">
+          <div className="bg-white dark:bg-[#181818] border border-light-gray dark:border-gray-800 rounded-lg px-4 pt-6 text-center overflow-hidden">
+            <div className="mb-3">
+              <Link href="https://portfoliosp.vercel.app" target="_blank">
+                <h3 className="text-black dark:text-white text-base lg:text-xl font-semibold transition duration-300 hover:text-primary">
+                  Personal Portfolio Website
+                </h3>
+              </Link>
+              <p className="text-gray-400 text-xs">HTML, CSS, JS, NEXTJS,</p>
+            </div>
+            <div className="shadow-xl">
+              <span className="transition duration-300 transform translate-y-5 hover:translate-y-0 "></span>
+              <Image
+                alt="portfolio_pic"
+                src={PortFolio}
+                className="transition duration-300 transform translate-y-5 hover:translate-y-0"
+              />
+            </div>
+          </div>
+          <div className="bg-white dark:bg-[#181818] border border-light-gray dark:border-gray-800 rounded-lg px-4 pt-6 text-center overflow-hidden">
+            <div className="mb-3">
+              <Link href="https://Feedback-systems.vercel.app" target="_blank">
+                <h3 className="text-black dark:text-white text-base lg:text-xl font-semibold transition duration-300 hover:text-primary">
+                  Faculty Feedback System
+                </h3>
+              </Link>
+              <p className="text-gray-400 text-xs mt-2">
+                HTML, CSS, JS, NEXTJS, PRISMA, NEXT-AUTH, MONGODB
+              </p>
+            </div>
+            <div className="shadow-xl">
+              <span className="transition duration-300 transform translate-y-5 hover:translate-y-0 "></span>
+              <Image
+                alt="Feedback_pic"
+                src={Feedback}
+                className="transition duration-300 transform translate-y-5 hover:translate-y-0"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className=" text-center py-7">
+          <Link
+            className=" flex items-center justify-center text-xs transition duration-300 md:text-sm text-gray-400 hover:text-[#f72b1c]"
+            href="/Project"
+          >
+            Show all my projects <MdNavigateNext className="w-[20px] h-[20px]"/>
+          </Link>
         </div>
       </section>
     </>
