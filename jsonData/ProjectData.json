@@ -1,0 +1,38 @@
+
+[
+    {
+        "id":1,
+      "title": "Personal Portfolio Website",
+      "description": "A personal portfolio website built with HTML, CSS, JS, and Next.js.",
+      "image_url": "/portfolio.png",
+      "link": "https://portfoliosp.vercel.app",
+      "technologies": ["HTML", "CSS", "JS", "Next.js"]
+    },
+    {
+     "id":2,
+      "title": "Faculty Feedback System",
+      "description": "A faculty feedback system built with HTML, CSS, JS, Next.js, Prisma, Next-auth, and MongoDB.",
+      "image_url": "/feedback.png",
+      "link": "https://Feedback-systems.vercel.app",
+      "technologies": ["HTML", "CSS", "JS", "Next.js", "Prisma", "Next-auth", "MongoDB"]
+    },
+    {
+        "id":3,
+         "title": "Faculty Feedback System",
+         "description": "A faculty feedback system built with HTML, CSS, JS, Next.js, Prisma, Next-auth, and MongoDB.",
+         "image_url": "/feedback.png",
+         "link": "https://Feedback-systems.vercel.app",
+         "technologies": ["HTML", "CSS", "JS", "Next.js", "Prisma", "Next-auth", "MongoDB"]
+       },
+       {
+        "id":4,
+         "title": "Faculty Feedback System",
+         "description": "A faculty feedback system built with HTML, CSS, JS, Next.js, Prisma, Next-auth, and MongoDB.",
+         "image_url": "/feedback.png",
+         "link": "https://Feedback-systems.vercel.app",
+         "technologies": ["HTML", "CSS", "JS", "Next.js", "Prisma", "Next-auth", "MongoDB"]
+       }
+    
+  ]
+  
+  

@@ -1,136 +1,26 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import PortFolio from "../public/portfolio.png";
-import Feedback from "../public/feedback.png";
-import {
-  FaCode,
-  FaCss3Alt,
-  FaReact,
-  FaJava,
-  FaGitAlt,
-  FaNodeJs,
-} from "react-icons/fa";
-import {
-  BsFillLightningChargeFill,
-  BsFillBootstrapFill,
-  BsGithub,
-} from "react-icons/bs";
-import {
-  TbBrandJavascript,
-  TbBrandCpp,
-  TbBrandTypescript,
-} from "react-icons/tb";
-import { BiLogoPostgresql } from "react-icons/bi";
+import ProjectData from "../jsonData/ProjectData.json";
+import Project from "@/components/Project";
+import { FaCode } from "react-icons/fa";
+import { BsFillLightningChargeFill } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { ImHtmlFive2 } from "react-icons/im";
-import {
-  SiNextdotjs,
-  SiTailwindcss,
-  SiPrisma,
-  SiExpress,
-  SiMongodb,
-} from "react-icons/si";
-import {MdNavigateNext} from "react-icons/md";
-
-const Skills = [
-  {
-    id: 1,
-    title: "HTML",
-    icon: <ImHtmlFive2 className="w-[28px] h-[28px] text-red-600" />,
-  },
-  {
-    id: 2,
-    title: "CSS",
-    icon: <FaCss3Alt className="w-[28px] h-[28px] text-blue-500" />,
-  },
-  {
-    id: 3,
-    title: "Javascript",
-    icon: <TbBrandJavascript className="w-[28px] h-[28px] text-yellow-500" />,
-  },
-  {
-    id: 4,
-    title: "Tailwind Css",
-    icon: <SiTailwindcss className="w-[28px] h-[28px] text-[#6a83f7]" />,
-  },
-  {
-    id: 5,
-    title: "Bootstrap",
-    icon: <BsFillBootstrapFill className="w-[28px] h-[28px] text-purple-700" />,
-  },
-  {
-    id: 6,
-    title: "React JS",
-    icon: <FaReact className="w-[28px] h-[28px] text-[#61DBFB]" />,
-  },
-  {
-    id: 7,
-    title: "Next Js",
-    icon: <SiNextdotjs className="w-[28px] h-[28px]" />,
-  },
-  {
-    id: 8,
-    title: "C++",
-    icon: <TbBrandCpp className="w-[28px] h-[28px] text-blue-900" />,
-  },
-  {
-    id: 9,
-    title: "Java",
-    icon: <FaJava className="w-[28px] h-[28px] text-[#5382a1]" />,
-  },
-  {
-    id: 10,
-    title: "Prisma ORM",
-    icon: <SiPrisma className="w-[28px] h-[28px]" />,
-  },
-  {
-    id: 11,
-    title: "TypeScript",
-    icon: <TbBrandTypescript className="w-[28px] h-[28px] text-[#007acc]" />,
-  },
-  {
-    id: 12,
-    title: "Git",
-    icon: <FaGitAlt className="w-[28px] h-[28px] text-[#f34f29]" />,
-  },
-  {
-    id: 13,
-    title: "Github",
-    icon: <BsGithub className="w-[28px] h-[28px]" />,
-  },
-  {
-    id: 14,
-    title: "Node js",
-    icon: <FaNodeJs className="w-[28px] h-[28px] text-green-700" />,
-  },
-  {
-    id: 15,
-    title: "Express Js",
-    icon: <SiExpress className="w-[28px] h-[28px]" />,
-  },
-  {
-    id: 16,
-    title: "Mongo DB",
-    icon: <SiMongodb className="w-[28px] h-[28px] text-green-600" />,
-  },
-  {
-    id: 17,
-    title: "Postgresql",
-    icon: <BiLogoPostgresql className="w-[28px] h-[28px] text-[#0064a5]" />,
-  },
-];
+import { MdNavigateNext } from "react-icons/md";
+import Skill from "@/components/Skill";
+import DesignLine from "./../components/DesignLine";
 
 const Home = () => {
   return (
     <>
+   {/*<------------- Hero section------------------> */}
+
       <section className=" bg-no-repeat bg-center px-3">
         <div className="react-reveal h-screen flex flex-col justify-center pt-16 items-center text-center lg:items-start lg:text-left">
           <span className="text-xs md:text-sm text-black flex items-center">
-            <span className="dark:text-white">Hi, I'm</span>
+            <span className="text-white">Hi, I'm</span>
             <span className="block w-6 lg:w-11 h-1 bg-[#f72b1c] ml-2 rounded-lg"></span>
           </span>
-          <h1 className="text-5xl lg:text-8xl font-bold text-black dark:text-white">
+          <h1 className="text-5xl lg:text-8xl font-bold text-white ">
             Swapnil Patel
           </h1>
           <h2 className="text-xl lg:text-4xl font-bold text-[#f72b1c] mt-2">
@@ -142,7 +32,7 @@ const Home = () => {
             proficient full stack developer.
           </p>
           <Link
-            className="inline-block w-max p-2 mt-6 border border-light-gray  dark:border-gray-700"
+            className="inline-block w-max p-2 mt-6 border border-gray-700  "
             href="/Contact"
           >
             <span className="inline-block min-w-[200px] text-xs lg:text-sm text-center font-bold  py-3 px-9 bg-[#f72b1c] hover:bg-black text-white hover:text-white transition duration-300 ">
@@ -151,20 +41,20 @@ const Home = () => {
           </Link>
         </div>
       </section>
-      <section className="py-10 lg:py-16 px-3 border-b border-light-gray border-opacity-50 dark:border-gray-800">
-        <h2 className="text-xl lg:text-2xl font-bold mb-0 text-center dark:text-white">
+
+       {/*<------------- Service section------------------> */}
+
+      <section className="py-10 lg:py-16 px-3 border-b  border-opacity-50 border-gray-800">
+        <h2 className="text-xl lg:text-2xl font-bold mb-0 text-center text-white">
           What I can <span className="text-[#f72b1c]"> do</span>
         </h2>
-        <div className="text-center mt-2 mb-3 lg:mb-5">
-          <span className="inline-block bg-[#f72b1c] w-[1.5px] lg:w-[2px] h-8 lg:h-9"></span>
-          <span className="inline-block bg-black dark:bg-white w-[1.5px] lg:w-[2px] h-8 lg:h-9 mx-1 lg:mx-[5px] -mb-2"></span>
-          <span className="inline-block bg-[#f72b1c] w-[1.5px] lg:w-[2px] h-8 lg:h-9"></span>
-        </div>
+        
+        <DesignLine />
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3 lg:gap-4">
-          <div className="p-6 border rounded-lg border-light-gray dark:border-gray-800 ">
+          <div className="p-6 border rounded-lg  border-gray-800 ">
             <div className="flex items-center">
-              <FaCode className=" p-1.5 border-2 border-[#f72b1c] rounded-full dark:text-white w-[30px] h-[30px]  " />
-              <h3 className="ml-4 text-sm font-semibold text-black dark:text-white lg:text-base">
+              <FaCode className=" p-1.5 border-2 border-[#f72b1c] rounded-full text-white w-[30px] h-[30px]  " />
+              <h3 className="ml-4 text-sm font-semibold text-white lg:text-base">
                 Web Development
               </h3>
             </div>
@@ -175,10 +65,10 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="p-6 border rounded-lg border-light-gray dark:border-gray-800">
+          <div className="p-6 border rounded-lg  border-gray-800">
             <div className="flex items-center">
-              <HiDownload className="p-1.5 border-2 border-[#f72b1c] rounded-full dark:text-white w-[30px] h-[30px]" />
-              <h3 className="ml-4 text-sm font-semibold text-black dark:text-white lg:text-base">
+              <HiDownload className="p-1.5 border-2 border-[#f72b1c] rounded-full text-white w-[30px] h-[30px]" />
+              <h3 className="ml-4 text-sm font-semibold text-black text-white lg:text-base">
                 WebApps Dev
               </h3>
             </div>
@@ -190,10 +80,10 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="p-6 border rounded-lg border-light-gray dark:border-gray-800">
+          <div className="p-6 border rounded-lg  border-gray-800">
             <div className="flex items-center">
-              <BsFillLightningChargeFill className="p-1.5 border-2 border-[#f72b1c] rounded-full dark:text-white w-[30px] h-[30px]" />
-              <h3 className="ml-4 text-sm font-semibold text-black dark:text-white lg:text-base">
+              <BsFillLightningChargeFill className="p-1.5 border-2 border-[#f72b1c] rounded-full text-white w-[30px] h-[30px]" />
+              <h3 className="ml-4 text-sm font-semibold  text-white lg:text-base">
                 Best Performance
               </h3>
             </div>
@@ -207,80 +97,28 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="py-10 lg:py-16 px-3 border-b border-light-gray border-opacity-50 dark:border-gray-800">
-        <h2 className="text-xl lg:text-2xl font-bold mb-0 text-center dark:text-white">
+
+       {/*<------------- Skill section------------------> */}
+
+      <section className="py-10 lg:py-16 px-3 border-b  border-opacity-50 border-gray-800">
+        <h2 className="text-xl lg:text-2xl font-bold mb-0 text-center text-white">
           Skills &<span className="text-[#f72b1c]"> Technology</span>
         </h2>
-        <div className="text-center mt-2 mb-3 lg:mb-5">
-          <span className="inline-block bg-[#f72b1c] w-[1.5px] lg:w-[2px] h-8 lg:h-9"></span>
-          <span className="inline-block bg-black dark:bg-white w-[1.5px] lg:w-[2px] h-8 lg:h-9 mx-1 lg:mx-[5px] -mb-2"></span>
-          <span className="inline-block bg-[#f72b1c] w-[1.5px] lg:w-[2px] h-8 lg:h-9"></span>
-        </div>
-        <div className="grid grid-cols-2 gap-3 lg:grid-cols-3 xl:grid-cols-4">
-          {Skills.map((data) => {
-            return (
-              <div key={data.id}>
-                <div className="flex items-center px-3 py-3 border rounded-lg border-light-gray dark:border-gray-800  hover:border-white hover:bg-[#f72b1c]">
-                  <div className=" flex items-center justify-center md:w-8 md:h-8 text-black dark:text-white">
-                    {data.icon}
-                  </div>
-                  <h3 className="ml-2 text-xs font-medium text-black dark:text-white md:text-sm md:ml-3 ">
-                    {data.title}
-                  </h3>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        <DesignLine />
+        <Skill />
       </section>
-      <section className="py-10 lg:py-16 px-3 border-b border-light-gray border-opacity-50 dark:border-gray-800">
-        <h2 className="text-xl lg:text-2xl font-bold mb-0 text-center dark:text-white">
+
+       {/*<------------- Project section------------------> */}
+
+      <section className="py-10 lg:py-16 px-3 border-b  border-opacity-50 border-gray-800">
+        <h2 className="text-xl lg:text-2xl font-bold mb-0 text-center text-white">
           Projects I have <span className="text-[#f72b1c]">Completed</span>
         </h2>
-        <div className="text-center mt-2 mb-3 lg:mb-5">
-          <span className="inline-block bg-[#f72b1c] w-[1.5px] lg:w-[2px] h-8 lg:h-9"></span>
-          <span className="inline-block bg-black dark:bg-white w-[1.5px] lg:w-[2px] h-8 lg:h-9 mx-1 lg:mx-[5px] -mb-2"></span>
-          <span className="inline-block bg-[#f72b1c] w-[1.5px] lg:w-[2px] h-8 lg:h-9"></span>
-        </div>
+        <DesignLine />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6">
-          <div className="bg-white dark:bg-[#181818] border border-light-gray dark:border-gray-800 rounded-lg px-4 pt-6 text-center overflow-hidden">
-            <div className="mb-3">
-              <Link href="https://portfoliosp.vercel.app" target="_blank">
-                <h3 className="text-black dark:text-white text-base lg:text-xl font-semibold transition duration-300 hover:text-primary">
-                  Personal Portfolio Website
-                </h3>
-              </Link>
-              <p className="text-gray-400 text-xs">HTML, CSS, JS, NEXTJS,</p>
-            </div>
-            <div className="shadow-xl">
-              <span className="transition duration-300 transform translate-y-5 hover:translate-y-0 "></span>
-              <Image
-                alt="portfolio_pic"
-                src={PortFolio}
-                className="transition duration-300 transform translate-y-5 hover:translate-y-0"
-              />
-            </div>
-          </div>
-          <div className="bg-white dark:bg-[#181818] border border-light-gray dark:border-gray-800 rounded-lg px-4 pt-6 text-center overflow-hidden">
-            <div className="mb-3">
-              <Link href="https://Feedback-systems.vercel.app" target="_blank">
-                <h3 className="text-black dark:text-white text-base lg:text-xl font-semibold transition duration-300 hover:text-primary">
-                  Faculty Feedback System
-                </h3>
-              </Link>
-              <p className="text-gray-400 text-xs mt-2">
-                HTML, CSS, JS, NEXTJS, PRISMA, NEXT-AUTH, MONGODB
-              </p>
-            </div>
-            <div className="shadow-xl">
-              <span className="transition duration-300 transform translate-y-5 hover:translate-y-0 "></span>
-              <Image
-                alt="Feedback_pic"
-                src={Feedback}
-                className="transition duration-300 transform translate-y-5 hover:translate-y-0"
-              />
-            </div>
-          </div>
+          {ProjectData.slice(0, 3).map((data) => (
+            <Project key={data.id} project={data} />
+          ))}
         </div>
 
         <div className=" text-center py-7">
@@ -288,7 +126,8 @@ const Home = () => {
             className=" flex items-center justify-center text-xs transition duration-300 md:text-sm text-gray-400 hover:text-[#f72b1c]"
             href="/Project"
           >
-            Show all my projects <MdNavigateNext className="w-[20px] h-[20px]"/>
+            Show all my projects
+            <MdNavigateNext className="w-[20px] h-[20px]" />
           </Link>
         </div>
       </section>
