@@ -48,8 +48,8 @@ const AboutPage = () => {
        <DesignLine />
         <p className="text-gray-400 text-xs md:text-base leading-5 md:leading-8 text-center max-w-2xl lg:mx-auto">
           My goal as a developer is to become a Fullstack Developer with
-          expertise in both <span className="text-[#f72b1c]">Frontend</span> and <span className="text-[#f72b1c]">Backend </span>technologies, as well as mobile
-          development. My aim is to be able to easily build solutions to solve
+          expertise in both <span className="text-[#f72b1c]">Frontend</span> and <span className="text-[#f72b1c]">Backend </span>technologies.
+          My aim is to be able to easily build solutions to solve
           problems using my skills and knowledge. While it will be a challenging
           and time-consuming journey, I am dedicated to practicing and learning
           continuously to reach my goal.
