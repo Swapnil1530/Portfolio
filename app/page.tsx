@@ -17,7 +17,7 @@ const Home = () => {
       <section className=" bg-no-repeat bg-center px-3">
         <div className="react-reveal h-screen flex flex-col justify-center pt-16 items-center text-center lg:items-start lg:text-left">
           <span className="text-xs md:text-sm text-black flex items-center">
-            <span className="text-white">Hi, I'm</span>
+            <span className="text-white">Hi, I'm </span>
             <span className="block w-6 lg:w-11 h-1 bg-[#f72b1c] ml-2 rounded-lg"></span>
           </span>
           <h1 className="text-5xl lg:text-8xl font-bold text-white ">
@@ -68,7 +68,7 @@ const Home = () => {
           <div className="p-6 border rounded-lg  border-gray-800">
             <div className="flex items-center">
               <HiDownload className="p-1.5 border-2 border-[#f72b1c] rounded-full text-white w-[30px] h-[30px]" />
-              <h3 className="ml-4 text-sm font-semibold text-black text-white lg:text-base">
+              <h3 className="ml-4 text-sm font-semibold  text-white lg:text-base">
                 WebApps Dev
               </h3>
             </div>

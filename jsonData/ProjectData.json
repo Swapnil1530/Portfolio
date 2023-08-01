@@ -1,23 +1,54 @@
-
 [
-    {
-        "id":1,
-      "title": "Personal Portfolio Website",
-      "description": "A personal portfolio website built with HTML, CSS, JS, and Next.js.",
-      "image_url": "/portfolio.png",
-      "link": "https://portfoliosp.vercel.app",
-      "technologies": ["HTML", "CSS", "JS", "Next.js"]
-    },
-    {
-     "id":2,
-      "title": "Faculty Feedback System",
-      "description": "A faculty feedback system built with HTML, CSS, JS, Next.js, Prisma, Next-auth, and MongoDB.",
-      "image_url": "/feedback.png",
-      "link": "https://Feedback-systems.vercel.app",
-      "technologies": ["HTML", "CSS", "JS", "Next.js", "Prisma", "Next-auth", "MongoDB"]
-    }
-   
-    
-  ]
-  
-  
+  {
+    "id": 1,
+    "title": "Personal Portfolio Website",
+    "description": "A personal portfolio website built with HTML, CSS, JS, and Next.js.",
+    "image_url": "/portfolio.png",
+    "link": "https://portfoliosp.vercel.app",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JS",
+      "Next.js"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Faculty Feedback System",
+    "description": "A faculty feedback system built with HTML, CSS, JS, Next.js, Prisma, Next-auth, and MongoDB.",
+    "image_url": "/feedback.png",
+    "link": "https://Feedback-systems.vercel.app",
+    "technologies": [
+      "React js",
+      "Next.js",
+      "Prisma",
+      "Next-auth",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Todo App ",
+    "description": "A Todo App built with Next.js",
+    "image_url": "/todoapp.png",
+    "link": "#",
+    "technologies": [
+      "Next.js",
+      "Prisma",
+      "Next-auth",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "World Rank ",
+    "description": "A World Rank App built with Next.js",
+    "image_url": "/worldrank.png",
+    "link": "https://world-rank-c.vercel.app",
+    "technologies": [
+      "Next.js",
+      "React js",
+      "Rest Api"
+    ]
+  }
+]
