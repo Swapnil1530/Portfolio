@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'SP || Portfolio',
-  description: '',
+  description: 'Portfolio make in next js 13 App router',
 }
 
 export default function RootLayout({
