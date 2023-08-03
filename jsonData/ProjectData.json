@@ -6,10 +6,9 @@
     "image_url": "/portfolio.png",
     "link": "https://portfoliosp.vercel.app",
     "technologies": [
-      "HTML",
-      "CSS",
-      "JS",
-      "Next.js"
+      "Next.js",
+      "React js",
+      "Tailwind Css"
     ]
   },
   {
