@@ -1,4 +1,5 @@
 import './globals.css'
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Header from "@/components/Header";
@@ -30,6 +31,7 @@ export default function RootLayout({
               <div className="max-w-[1140px] xl:border-light-gray xl:border-r xl:border-l dark:border-gray-800">
                   <main className="max-w-[1000px] mx-auto relative z-20">
           {children}
+          <Analytics/>
                       <Footer />
                   </main>
               </div>
