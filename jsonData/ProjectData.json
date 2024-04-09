@@ -1,6 +1,19 @@
 [
   {
     "id": 1,
+    "title": "Modern StackOverFlow",
+    "description": "Clone Stackoverflow using Next js , MongoDB , Clerk , Tailwind Css",
+    "image_url": "/stack.png",
+    "link": "https://nextoverflow.vercel.app",
+    "technologies": [
+      "Next.js",
+      "MongoDB",
+      "Clerk",
+      "Tailwind Css"
+    ]
+  },
+  {
+    "id": 1,
     "title": "Personal Portfolio Website",
     "description": "A personal portfolio website built with HTML, CSS, JS, and Next.js.",
     "image_url": "/portfolio.png",
